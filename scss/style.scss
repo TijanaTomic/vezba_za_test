@@ -144,3 +144,25 @@ footer {
     float: right;
   }
 }
+@media screen and (max-width: 1300px) {
+  main {
+    padding: 2em 1em;
+    h1 {
+      width: 90%;
+      margin-top: 10%;
+    }
+  }
+  #catalog {
+    .column {
+      width: 50%;
+      margin-bottom: 3em;
+    }
+  }
+}
+footer {
+  text-align: center;
+  address,
+  .map {
+    float: none;
+  }
+}
