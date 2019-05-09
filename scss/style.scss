@@ -126,3 +126,21 @@ section {
     }
   }
 }
+footer {
+  background-color: black;
+  @include clearfix; //koristi se za kontejnere
+  .logo {
+    clear: both; //jer je element u roditelju
+    border-bottom: 1px solid $main_red;
+  }
+  address,
+  .map {
+    margin: 1em;
+  }
+  address {
+    float: left;
+  }
+  .map {
+    float: right;
+  }
+}
