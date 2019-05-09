@@ -166,3 +166,41 @@ footer {
     float: none;
   }
 }
+@media screen and (max-width: 900px) {
+  main {
+    background-image: none;
+    background-color: black;
+    height: auto;
+    header {
+      nav {
+        width: 100%; //da je nateramo da se poredjaju jedno ispod drugog
+        text-align: center;
+        ul {
+          li {
+            display: block;
+            //width: 100%; //posto su inline block moramo da im dati 100% sirinu da bi se redjali jedno ispod drugog
+          }
+        }
+        h1 {
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+  #catalog {
+    .column {
+      width: 100%;
+    }
+  }
+  #pricing {
+    table {
+      display: none;
+    }
+    .buttons {
+      display: inline-block; //da bi ga centrirali, ako ide block onda nece biti centriran
+    }
+  }
+  footer {
+    padding: 2em;
+  }
+}
